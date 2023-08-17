@@ -30,11 +30,36 @@ curl http://checkip.amazonaws.com
 yum install git -y
 
 # add a basic nginx config
-# dir: /etc/nginx/conf.d
+# nginx dir: /etc/nginx/conf.d
+# repo dir: /www/leling
 server {
     listen       80;
     listen       [::]:80;
     server_name  leling-tech.com www.leling-tech.com;
     root         /www/leling;
 }
+
+#=======================
+# install certbot
+#=======================
+# choose nginx and fedora for amazon linux 2023
+# https://certbot.eff.org/instructions?ws=nginx&os=fedora
+
+# remove old dependencies
+dnf remove certbot
+
+# install python3 with python/pip
+dnf install python3 augeas-libs
+
+# install pip
+python3 -m venv /opt/certbot/ && sudo /opt/certbot/bin/pip install --upgrade pip
+
+# install with pip
+/opt/certbot/bin/pip install certbot certbot-nginx
+
+# symbollink
+ln -s /opt/certbot/bin/certbot /usr/bin/certbot
+
+# configure nginx
+certbot --nginx
 ```
