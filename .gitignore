@@ -129,5 +129,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# misc
+.DS_Store
+
 # aws key
 *.pem
