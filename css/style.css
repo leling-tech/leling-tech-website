@@ -403,3 +403,10 @@
     scale: 138%;
     transform: translate3d(0, 0, 0);
 }
+
+.c-line-clamp2 {
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
