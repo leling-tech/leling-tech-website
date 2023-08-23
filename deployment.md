@@ -37,6 +37,26 @@ server {
     listen       [::]:80;
     server_name  leling-tech.com www.leling-tech.com;
     root         /www/leling;
+
+    location /about {
+        try_files /about.html =404;
+    }
+
+    location /category {
+        try_files /category.html =404;
+    }
+
+    location /testimonial {
+        try_files /testimonial.html =404;
+    }
+
+    location /download {
+        try_files /download.html =404;
+    }
+
+    location /contact {
+        try_files /contact.html =404;
+    }
 }
 
 #=======================
