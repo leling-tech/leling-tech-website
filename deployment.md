@@ -38,25 +38,41 @@ server {
     server_name  leling-tech.com www.leling-tech.com;
     root         /www/leling;
 
-    location /about {
-        try_files /about.html =404;
+    # url rewrite
+    location / {
+        rewrite ^/$ /index.html break;
+
+        rewrite ^/about$ /about.html break;
+
+        rewrite ^/category$ /category.html break;
+
+        rewrite ^/testimonial$ /testimonial.html break;
+
+        rewrite ^/download$ /download.html break;
+
+        rewrite ^/contact$ /contact.html break;
     }
 
-    location /category {
-        try_files /category.html =404;
-    }
+    # location try_files
+    # location /about {
+    #     try_files /about.html =404;
+    # }
 
-    location /testimonial {
-        try_files /testimonial.html =404;
-    }
+    # location /category {
+    #     try_files /category.html =404;
+    # }
 
-    location /download {
-        try_files /download.html =404;
-    }
+    # location /testimonial {
+    #     try_files /testimonial.html =404;
+    # }
 
-    location /contact {
-        try_files /contact.html =404;
-    }
+    # location /download {
+    #     try_files /download.html =404;
+    # }
+
+    # location /contact {
+    #     try_files /contact.html =404;
+    # }
 }
 
 #=======================
