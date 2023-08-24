@@ -410,3 +410,10 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.navbar {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
