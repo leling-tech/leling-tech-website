@@ -394,7 +394,8 @@
 
 /*** global logo ***/
 .navbar-logo{
-    height:75px;
+    height: 75px;
+    display: inline-block;
 }
 
 .navbar-logo img {
@@ -416,4 +417,5 @@
     flex-wrap: nowrap !important;
     align-items: center !important;
     justify-content: space-between !important;
+    flex-direction: row !important;
 }
