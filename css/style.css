@@ -397,6 +397,7 @@
     height: 75px;
     display: inline-block;
     flex: 0 0 auto;
+    text-align: left !important;
 }
 
 .navbar-logo img {
