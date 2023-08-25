@@ -394,7 +394,7 @@
 
 /*** global logo ***/
 .navbar-logo {
-    width: 171px;
+    max-width: 171px;
     height: 75px;
     display: inline-block;
     flex: 0 0 auto;
