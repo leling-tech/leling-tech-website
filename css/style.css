@@ -393,10 +393,12 @@
 }
 
 /*** global logo ***/
-.navbar-logo{
+.navbar-logo {
+    width: 171px;
     height: 75px;
     display: inline-block;
     flex: 0 0 auto;
+    overflow: hidden;
     text-align: left !important;
 }
 
