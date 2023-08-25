@@ -99,3 +99,6 @@ ln -s /opt/certbot/bin/certbot /usr/bin/certbot
 # configure nginx
 certbot --nginx
 ```
+
+## apk download path
+download: https://www.leling-tech.com/download/leling-tech.apk
