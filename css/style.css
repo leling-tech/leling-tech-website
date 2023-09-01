@@ -399,13 +399,15 @@
     display: inline-block;
     flex: 0 0 auto;
     overflow: hidden;
+    margin-left: 0 !important;
     text-align: left !important;
+    transform: translate3d(0, 0, 0);
 }
 
 .navbar-logo img {
     width: 100%;
     height: 100%;
-    scale: 138%;
+    scale: 1.38;
     transform: translate3d(0, 0, 0);
 }
 
